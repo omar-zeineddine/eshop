@@ -93,6 +93,16 @@ class AuthController extends Controller{
     }
 
     /**
+     * Get the authenticated User.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function profile()
+    {
+        return response()->json(auth()->user());
+    }
+
+    /**
      * Log the user out (Invalidate the token).
      *
      * @return \Illuminate\Http\JsonResponse
@@ -101,7 +111,7 @@ class AuthController extends Controller{
     {
         auth()->logout();
 
-        return response()->json(['message' => 'User signed out successfully ']);
+        return response()->json(['message' => 'User logged out']);
     }
 
     /**
@@ -113,16 +123,5 @@ class AuthController extends Controller{
     {
         return $this->createNewToken(auth()->refresh());
     }
-
-    /**
-     * Get the authenticated User.
-     *
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function userProfile()
-    {
-        return response()->json(auth()->user());
-    }
-
     
 }
