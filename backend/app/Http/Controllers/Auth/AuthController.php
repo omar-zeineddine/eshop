@@ -46,6 +46,8 @@ class AuthController extends Controller{
             ['password' => bcrypt($request->password)]
         ));
 
+        // Auth::login($user); // automatic login after registration
+
         return response()->json([
             'status' => true,
             'message' => 'User registered successfully ',
