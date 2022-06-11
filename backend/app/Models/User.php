@@ -68,4 +68,12 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+
+    // Eloquent model, many -> many
+    
+    public function favoritedProducts(){
+
+        return $this->belongsToMany(Product::class, 'favorites');
+    }
+
 }
