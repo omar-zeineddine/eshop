@@ -19,7 +19,8 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->integer('stock');
             // inserting a foreign key from the categories table
-            $table->foreignId(column: 'category_id')->constrained(table: 'categories');
+            // $table->foreignId(column: 'category_id')->constrained(table: 'categories');
+            $table->foreignId('category_id');
             $table->timestamps();
         });
     }

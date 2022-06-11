@@ -14,8 +14,11 @@ class CreateFavoritesTable extends Migration
     public function up()
     {
         Schema::create('favorites', function (Blueprint $table) {
-            $table->foreignId(column: 'user_id')->constrained(table: 'users');
-            $table->foreignId(column: 'product_id')->constrained(table: 'products');
+            // $table->foreignId(column: 'user_id')->constrained(table: 'users');
+            // $table->foreignId(column: 'product_id')->constrained(table: 'products');
+            //
+            $table->foreignId('user_id');
+            $table->foreignId('product_id');
             $table->timestamps();
         });
     }
