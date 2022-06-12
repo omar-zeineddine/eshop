@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin panel</title>
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container row">
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <a class="logo" href="#">
+          <img src="assets/images/admin.png" alt="eshop logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list nav__list--primary">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Add Product</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Add Category</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--button">logout</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/admin.js"></script>
+  </body>
+</html>
