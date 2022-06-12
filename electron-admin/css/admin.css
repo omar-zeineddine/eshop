@@ -17,6 +17,7 @@ img {
 h1 {
   font-size: 3rem;
   margin-top: 0;
+  text-align: center;
 }
 
 .btn {
@@ -150,6 +151,79 @@ header {
 
 .logo {
   height: 30px;
+}
+
+/* --------------------------------*/
+/*       admin product form
+/* --------------------------------*/
+
+.admin {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+.admin-header,
+.admin p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.admin-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.admin-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .admin-container is defined with p tags */
+.admin div {
+  padding: 12px;
+}
+
+.admin input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.admin input[type="text"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+.admin input[type="text"]:focus {
+  border-color: #888;
+}
+
+.add_btn {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add_btn:hover {
+  background: #17c;
+}
+.add_btn:focus {
+  border-color: #05a;
 }
 
 @media (min-width: 800px) {

@@ -33,6 +33,37 @@
         </nav>
       </div>
     </header>
+
+    <div class="admin">
+      <div class="admin-triagnle"></div>
+      <h2 class="admin-header">Products Controls</h2>
+
+      <form class="admin-container">
+        <div>
+          <input placeholder="Name" id="product_name" type="text" required />
+        </div>
+
+        <div>
+          <input placeholder="Price" id="product_price" type="text" required />
+        </div>
+
+        <div>
+          <input placeholder="Stock" id="product_stock" type="text" required />
+        </div>
+
+        <div>
+          <input
+            placeholder="Category"
+            id="product_category"
+            type="text"
+            required
+          />
+        </div>
+
+        <div><input id="add_btn" class="add_btn" value="Add Product" /></div>
+      </form>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./scripts/admin.js"></script>
   </body>
