@@ -27,7 +27,9 @@
           </ul>
           <ul class="nav__list nav__list--secondary">
             <li class="nav__item">
-              <a href="#" class="nav__link nav__link--button">logout</a>
+              <a id="logout_btn" href="#" class="nav__link nav__link--button"
+                >logout</a
+              >
             </li>
           </ul>
         </nav>
@@ -35,7 +37,6 @@
     </header>
 
     <div class="admin">
-      <div class="admin-triagnle"></div>
       <h2 class="admin-header">Products Controls</h2>
 
       <form class="admin-container">
@@ -61,6 +62,16 @@
         </div>
 
         <div><input id="add_btn" class="add_btn" value="Add Product" /></div>
+      </form>
+    </div>
+
+    <div class="admin">
+      <form action="" class="admin-container category-container">
+        <div class="form-group">
+          <input type="text" id="cat_name" placeholder="Category" required />
+        </div>
+        <!--<button id="add_cat_btn" class="add-btn">Add</button> -->
+        <div><input id="add_btn" class="add_btn" value="Add Category" /></div>
       </form>
     </div>
 
