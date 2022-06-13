@@ -54,7 +54,7 @@ let login = (e) => {
       let token = response.data.access_token;
       localStorage.setItem("token", token);
 
-      window.location.href = "./test.html";
+      window.location.href = "./browse.html";
     })
     .catch(function (error) {
       console.log("did not pass");

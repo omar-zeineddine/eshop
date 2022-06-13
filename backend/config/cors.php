@@ -29,6 +29,10 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => false,
+    // https://laracasts.com/discuss/channels/elixir/set-cors-to-allow-cross-site-request
+
+    'supports_credentials' => true,
+    
+    'axios.defaults.withCredentials' => true,
 
 ];
