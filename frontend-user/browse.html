@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/browse.css" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="container row">
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <a class="logo row" href="#">
+          <img src="./assets/images/eshop_cart.png" alt="eshop logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list nav__list--primary">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a id="get_categories" href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item">
+              <a href="#" class="nav__link" id="username">username</a>
+            </li>
+            <li class="nav__item">
+              <a id="logout_btn" href="#" class="nav__link nav__link--button"
+                >logout</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container row">
+      <section class="favorites">
+        <h2>Favorites</h2>
+        <div class="product">
+          <!-- <img src="./assets/images/sample.jpeg" class="sample-img" /> -->
+          <!-- <h4>name</h4> -->
+          <!-- <h5>Category</h5> -->
+          <!-- <h3 class="price">50$</h3> -->
+        </div>
+      </section>
+    </div>
+
+    <div class="container row">
+      <section class="products">
+        <h2>products</h2>
+        <div class="product">
+          <!-- <img src="./assets/images/sample.jpeg" class="sample-img" /> -->
+          <!-- <h4>name</h4> -->
+          <!-- <h5>Category</h5> -->
+          <!-- <h3 class="price">50$</h3> -->
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./scripts/browse.js"></script>
+  </body>
+</html>
