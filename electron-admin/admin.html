@@ -22,6 +22,11 @@
               <a href="#" class="nav__link">Add Product</a>
             </li>
             <li class="nav__item">
+              <a id="get_categories" href="#" class="nav__link"
+                >Get all Categories</a
+              >
+            </li>
+            <li class="nav__item">
               <a href="#" class="nav__link">Add Category</a>
             </li>
           </ul>
@@ -61,17 +66,23 @@
           />
         </div>
 
-        <div><input id="add_btn" class="add_btn" value="Add Product" /></div>
+        <div><button id="add_btn" class="add_btn">Add Product</button></div>
       </form>
     </div>
 
     <div class="admin">
       <form action="" class="admin-container category-container">
         <div class="form-group">
-          <input type="text" id="cat_name" placeholder="Category" required />
+          <input
+            type="text"
+            id="category_name"
+            placeholder="Category"
+            required
+          />
         </div>
-        <!--<button id="add_cat_btn" class="add-btn">Add</button> -->
-        <div><input id="add_btn" class="add_btn" value="Add Category" /></div>
+        <div>
+          <button id="add_category_btn" class="add_btn">Add Category</button>
+        </div>
       </form>
     </div>
 

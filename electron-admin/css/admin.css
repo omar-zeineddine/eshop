@@ -212,6 +212,9 @@ header {
 }
 
 .add_btn {
+  display: inline-block;
+  width: 100%;
+  padding: 1em 1.5em;
   background: #28d;
   border-color: transparent;
   color: #fff;
